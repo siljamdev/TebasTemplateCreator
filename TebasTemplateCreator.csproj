@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+	
+	<Version>1.0.0</Version>
+    <Authors>Dumbelfo</Authors>
+    <Company>AshProject</Company>
+    <PackageDescription>Easily create templates for the Tebas project manager</PackageDescription>
+    <RepositoryUrl>https://github.com/Dumbelfo08/TebasTemplateCreator</RepositoryUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AshLib" Version="2.1.0" />
+  </ItemGroup>
+
+</Project>
