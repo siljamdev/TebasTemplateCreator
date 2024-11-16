@@ -21,22 +21,22 @@ class TebasTemplateCreator{
 		
 		loadFile("extensions.txt", "codeExtensions");
 		
-		if(Directory.Exists(Directory.GetCurrentDirectory() + "/scripts")){
-			string[] scripts = Directory.GetFiles(Directory.GetCurrentDirectory() + "/scripts", "*.tbscr", SearchOption.TopDirectoryOnly);
+		if(Directory.Exists("scripts")){
+			string[] scripts = Directory.GetFiles("scripts", "*.tbscr", SearchOption.TopDirectoryOnly);
 			
 			foreach(string scr in scripts){
-				t.SetCamp("script." + Path.GetFileNameWithoutExtension(scr), File.ReadAllText("scripts/" + scr));
+				t.SetCamp("script." + Path.GetFileNameWithoutExtension(scr), File.ReadAllText(scr));
 				Console.WriteLine("Loaded script " + Path.GetFileNameWithoutExtension(scr));
 			}
 		}else{
 			Console.WriteLine("We could not find the scripts folder");
 		}
 		
-		if(Directory.Exists(Directory.GetCurrentDirectory() + "/resources")){
-			string[] resources = Directory.GetFiles(Directory.GetCurrentDirectory() + "/resources", "*.*", SearchOption.TopDirectoryOnly);
+		if(Directory.Exists("resources")){
+			string[] resources = Directory.GetFiles("resources", "*.*", SearchOption.TopDirectoryOnly);
 			
 			foreach(string res in resources){
-				t.SetCamp("resources." + Path.GetFileNameWithoutExtension(res), File.ReadAllText("resources/" + res));
+				t.SetCamp("resources." + Path.GetFileNameWithoutExtension(res), File.ReadAllText(res));
 				Console.WriteLine("Loaded resource " + res);
 			}
 		}else{
