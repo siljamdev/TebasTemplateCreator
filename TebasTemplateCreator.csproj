@@ -11,6 +11,8 @@
     <Company>AshProject</Company>
     <PackageDescription>Easily create templates for the Tebas project manager</PackageDescription>
     <RepositoryUrl>https://github.com/Dumbelfo08/TebasTemplateCreator</RepositoryUrl>
+	
+	<ApplicationIcon>res/icon.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
