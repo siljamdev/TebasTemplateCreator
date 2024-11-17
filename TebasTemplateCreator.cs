@@ -17,7 +17,13 @@ class TebasTemplateCreator{
 		
 		loadFile("default.gitignore", "git.gitignore");
 		
-		loadFile("readme.md", "readme");
+		if(File.Exists("readme.md")){
+			t.SetCamp("addReadme", true);
+			loadFile("readme.md", "readme");
+		}else{
+			t.SetCamp("addReadme", askTF("Add readme file?"));
+		}
+		
 		
 		loadFile("extensions.txt", "codeExtensions");
 		
