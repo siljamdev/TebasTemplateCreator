@@ -1,4 +1,8 @@
-# Tebas Template Creator
+# WARNING: THIS HAS BEEN DISCONTINUED
+### The functionality of this application is now contained inside of Tebas project manager itself
+### Here is the original description:
+
+## Tebas Template Creator
 
 Helps you easily create templates for the [Tebas project manager](https://github.com/Dumbelfo08/Tebas).
 
